@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C72FE7D72AA72F6100900209 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = C72FE7D62AA72F6100900209 /* GoogleMobileAds */; };
+		C72FE7D92AA7302E00900209 /* GADCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FE7D82AA7302E00900209 /* GADCommand.swift */; };
+		C72FE7DB2AA7305500900209 /* GADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FE7DA2AA7305500900209 /* GADModel.swift */; };
+		C72FE7DD2AA7308100900209 /* GADViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FE7DC2AA7308100900209 /* GADViewModel.swift */; };
+		C72FE7DF2AA7309C00900209 /* GADNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FE7DE2AA7309C00900209 /* GADNativeView.swift */; };
+		C72FE7E12AA7310000900209 /* GADState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FE7E02AA7310000900209 /* GADState.swift */; };
+		C72FE7E32AA732FF00900209 /* admob.json in Resources */ = {isa = PBXBuildFile; fileRef = C72FE7E22AA732FF00900209 /* admob.json */; };
+		C7350E5F2A9F5229006DBB8D /* DashboardCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E5E2A9F5229006DBB8D /* DashboardCommand.swift */; };
+		C7350E622A9F5CC8006DBB8D /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E612A9F5CC8006DBB8D /* DrinkModel.swift */; };
+		C7350E642A9F5CFB006DBB8D /* ChartsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E632A9F5CFB006DBB8D /* ChartsModel.swift */; };
+		C7350E662A9F5D1D006DBB8D /* RecordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E652A9F5D1D006DBB8D /* RecordState.swift */; };
+		C7350E682A9F5D93006DBB8D /* ChartsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E672A9F5D93006DBB8D /* ChartsState.swift */; };
+		C7350E6A2A9F5E6D006DBB8D /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E692A9F5E6D006DBB8D /* FileHelper.swift */; };
+		C7350E6C2A9F5F08006DBB8D /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E6B2A9F5F08006DBB8D /* RecordModel.swift */; };
+		C7350E6E2A9F5FE9006DBB8D /* ReminderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E6D2A9F5FE9006DBB8D /* ReminderState.swift */; };
+		C7350E702A9F6570006DBB8D /* TotalDrinkPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E6F2A9F6570006DBB8D /* TotalDrinkPage.swift */; };
+		C7350E722AA03175006DBB8D /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E712AA03175006DBB8D /* SliderView.swift */; };
+		C7350E762AA05E94006DBB8D /* RecordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E752AA05E94006DBB8D /* RecordPage.swift */; };
+		C7350E782AA0A038006DBB8D /* HistoryRecordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E772AA0A038006DBB8D /* HistoryRecordPage.swift */; };
+		C7350E7A2AA1B2D3006DBB8D /* NotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7350E792AA1B2D3006DBB8D /* NotificationUtil.swift */; };
+		C775077A2AA85B780083D688 /* DismissCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77507792AA85B780083D688 /* DismissCommand.swift */; };
+		C7E60BAD2A9ED9D600E8ECE2 /* WaterTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BAC2A9ED9D600E8ECE2 /* WaterTimerApp.swift */; };
+		C7E60BAF2A9ED9D600E8ECE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BAE2A9ED9D600E8ECE2 /* ContentView.swift */; };
+		C7E60BB12A9ED9D800E8ECE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E60BB02A9ED9D800E8ECE2 /* Assets.xcassets */; };
+		C7E60BB42A9ED9D800E8ECE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E60BB32A9ED9D800E8ECE2 /* Preview Assets.xcassets */; };
+		C7E60BBB2A9ED9ED00E8ECE2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BBA2A9ED9ED00E8ECE2 /* Store.swift */; };
+		C7E60BBE2A9EDA0600E8ECE2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BBD2A9EDA0600E8ECE2 /* AppState.swift */; };
+		C7E60BC02A9EDA0E00E8ECE2 /* AppCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BBF2A9EDA0E00E8ECE2 /* AppCommand.swift */; };
+		C7E60BC22A9EDA1800E8ECE2 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BC12A9EDA1800E8ECE2 /* Action.swift */; };
+		C7E60BC62A9EE04F00E8ECE2 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BC52A9EE04F00E8ECE2 /* RootState.swift */; };
+		C7E60BCB2A9EE4A400E8ECE2 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BCA2A9EE4A400E8ECE2 /* HomePage.swift */; };
+		C7E60BCD2A9EE50600E8ECE2 /* LaunchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BCC2A9EE50600E8ECE2 /* LaunchPage.swift */; };
+		C7E60BCF2A9EEF8A00E8ECE2 /* LaunchCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BCE2A9EEF8A00E8ECE2 /* LaunchCommand.swift */; };
+		C7E60BE12A9F2F7D00E8ECE2 /* DashboardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BE02A9F2F7D00E8ECE2 /* DashboardPage.swift */; };
+		C7E60BE32A9F30E300E8ECE2 /* StatisticsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BE22A9F30E300E8ECE2 /* StatisticsPage.swift */; };
+		C7E60BE52A9F30EE00E8ECE2 /* ReminderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BE42A9F30EE00E8ECE2 /* ReminderPage.swift */; };
+		C7E60BE72A9F314500E8ECE2 /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BE62A9F314500E8ECE2 /* HomeState.swift */; };
+		C7E60BE92A9F3C9900E8ECE2 /* TabBarCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BE82A9F3C9900E8ECE2 /* TabBarCommand.swift */; };
+		C7E60BEB2A9F455C00E8ECE2 /* DashboardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BEA2A9F455C00E8ECE2 /* DashboardState.swift */; };
+		C7E60BED2A9F49E900E8ECE2 /* ProgressPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E60BEC2A9F49E900E8ECE2 /* ProgressPage.swift */; };
+		C7E95D052AA1C020008FD268 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E95D042AA1C020008FD268 /* ReminderView.swift */; };
+		C7E95D082AA1C490008FD268 /* SheetKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7E95D072AA1C490008FD268 /* SheetKit */; };
+		C7E95D0A2AA1CC35008FD268 /* ReminderCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E95D092AA1CC35008FD268 /* ReminderCommand.swift */; };
+		C7E95D0D2AA1D317008FD268 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = C7E95D0C2AA1D317008FD268 /* FacebookCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C72FE7D82AA7302E00900209 /* GADCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADCommand.swift; sourceTree = "<group>"; };
+		C72FE7DA2AA7305500900209 /* GADModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADModel.swift; sourceTree = "<group>"; };
+		C72FE7DC2AA7308100900209 /* GADViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADViewModel.swift; sourceTree = "<group>"; };
+		C72FE7DE2AA7309C00900209 /* GADNativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADNativeView.swift; sourceTree = "<group>"; };
+		C72FE7E02AA7310000900209 /* GADState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADState.swift; sourceTree = "<group>"; };
+		C72FE7E22AA732FF00900209 /* admob.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = admob.json; sourceTree = "<group>"; };
+		C7350E5E2A9F5229006DBB8D /* DashboardCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCommand.swift; sourceTree = "<group>"; };
+		C7350E612A9F5CC8006DBB8D /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
+		C7350E632A9F5CFB006DBB8D /* ChartsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsModel.swift; sourceTree = "<group>"; };
+		C7350E652A9F5D1D006DBB8D /* RecordState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordState.swift; sourceTree = "<group>"; };
+		C7350E672A9F5D93006DBB8D /* ChartsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsState.swift; sourceTree = "<group>"; };
+		C7350E692A9F5E6D006DBB8D /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		C7350E6B2A9F5F08006DBB8D /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		C7350E6D2A9F5FE9006DBB8D /* ReminderState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderState.swift; sourceTree = "<group>"; };
+		C7350E6F2A9F6570006DBB8D /* TotalDrinkPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDrinkPage.swift; sourceTree = "<group>"; };
+		C7350E712AA03175006DBB8D /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		C7350E752AA05E94006DBB8D /* RecordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPage.swift; sourceTree = "<group>"; };
+		C7350E772AA0A038006DBB8D /* HistoryRecordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRecordPage.swift; sourceTree = "<group>"; };
+		C7350E792AA1B2D3006DBB8D /* NotificationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUtil.swift; sourceTree = "<group>"; };
+		C77507792AA85B780083D688 /* DismissCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissCommand.swift; sourceTree = "<group>"; };
+		C7E60BA92A9ED9D600E8ECE2 /* WaterTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E60BAC2A9ED9D600E8ECE2 /* WaterTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTimerApp.swift; sourceTree = "<group>"; };
+		C7E60BAE2A9ED9D600E8ECE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7E60BB02A9ED9D800E8ECE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7E60BB32A9ED9D800E8ECE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7E60BBA2A9ED9ED00E8ECE2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		C7E60BBD2A9EDA0600E8ECE2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C7E60BBF2A9EDA0E00E8ECE2 /* AppCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommand.swift; sourceTree = "<group>"; };
+		C7E60BC12A9EDA1800E8ECE2 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		C7E60BC52A9EE04F00E8ECE2 /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
+		C7E60BCA2A9EE4A400E8ECE2 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		C7E60BCC2A9EE50600E8ECE2 /* LaunchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPage.swift; sourceTree = "<group>"; };
+		C7E60BCE2A9EEF8A00E8ECE2 /* LaunchCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCommand.swift; sourceTree = "<group>"; };
+		C7E60BDC2A9F130100E8ECE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C7E60BE02A9F2F7D00E8ECE2 /* DashboardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPage.swift; sourceTree = "<group>"; };
+		C7E60BE22A9F30E300E8ECE2 /* StatisticsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsPage.swift; sourceTree = "<group>"; };
+		C7E60BE42A9F30EE00E8ECE2 /* ReminderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderPage.swift; sourceTree = "<group>"; };
+		C7E60BE62A9F314500E8ECE2 /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
+		C7E60BE82A9F3C9900E8ECE2 /* TabBarCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCommand.swift; sourceTree = "<group>"; };
+		C7E60BEA2A9F455C00E8ECE2 /* DashboardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardState.swift; sourceTree = "<group>"; };
+		C7E60BEC2A9F49E900E8ECE2 /* ProgressPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressPage.swift; sourceTree = "<group>"; };
+		C7E95D042AA1C020008FD268 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
+		C7E95D092AA1CC35008FD268 /* ReminderCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCommand.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7E60BA62A9ED9D600E8ECE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72FE7D72AA72F6100900209 /* GoogleMobileAds in Frameworks */,
+				C7E95D082AA1C490008FD268 /* SheetKit in Frameworks */,
+				C7E95D0D2AA1D317008FD268 /* FacebookCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7350E602A9F5CB4006DBB8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7350E612A9F5CC8006DBB8D /* DrinkModel.swift */,
+				C7350E632A9F5CFB006DBB8D /* ChartsModel.swift */,
+				C7350E6B2A9F5F08006DBB8D /* RecordModel.swift */,
+				C72FE7DA2AA7305500900209 /* GADModel.swift */,
+				C72FE7DC2AA7308100900209 /* GADViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7E60BA02A9ED9D600E8ECE2 = {
+			isa = PBXGroup;
+			children = (
+				C7E60BAB2A9ED9D600E8ECE2 /* WaterTimer */,
+				C7E60BAA2A9ED9D600E8ECE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7E60BAA2A9ED9D600E8ECE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7E60BA92A9ED9D600E8ECE2 /* WaterTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7E60BAB2A9ED9D600E8ECE2 /* WaterTimer */ = {
+			isa = PBXGroup;
+			children = (
+				C7E60BDC2A9F130100E8ECE2 /* Info.plist */,
+				C72FE7E22AA732FF00900209 /* admob.json */,
+				C7E60BAC2A9ED9D600E8ECE2 /* WaterTimerApp.swift */,
+				C7E60BAE2A9ED9D600E8ECE2 /* ContentView.swift */,
+				C7E60BDD2A9F1DF500E8ECE2 /* Modifier */,
+				C7E60BBC2A9ED9F500E8ECE2 /* Data */,
+				C7E60BC72A9EE25E00E8ECE2 /* Page */,
+				C7E60BB02A9ED9D800E8ECE2 /* Assets.xcassets */,
+				C7E60BB22A9ED9D800E8ECE2 /* Preview Content */,
+			);
+			path = WaterTimer;
+			sourceTree = "<group>";
+		};
+		C7E60BB22A9ED9D800E8ECE2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C7E60BB32A9ED9D800E8ECE2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7E60BBC2A9ED9F500E8ECE2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C7350E692A9F5E6D006DBB8D /* FileHelper.swift */,
+				C7350E792AA1B2D3006DBB8D /* NotificationUtil.swift */,
+				C7E60BBA2A9ED9ED00E8ECE2 /* Store.swift */,
+				C7E60BC12A9EDA1800E8ECE2 /* Action.swift */,
+				C7350E602A9F5CB4006DBB8D /* Model */,
+				C7E60BC42A9EDA3400E8ECE2 /* Command */,
+				C7E60BC32A9EDA2500E8ECE2 /* State */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C7E60BC32A9EDA2500E8ECE2 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C7E60BBD2A9EDA0600E8ECE2 /* AppState.swift */,
+				C7E60BC52A9EE04F00E8ECE2 /* RootState.swift */,
+				C7E60BE62A9F314500E8ECE2 /* HomeState.swift */,
+				C7350E652A9F5D1D006DBB8D /* RecordState.swift */,
+				C7350E672A9F5D93006DBB8D /* ChartsState.swift */,
+				C7E60BEA2A9F455C00E8ECE2 /* DashboardState.swift */,
+				C7350E6D2A9F5FE9006DBB8D /* ReminderState.swift */,
+				C72FE7E02AA7310000900209 /* GADState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C7E60BC42A9EDA3400E8ECE2 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				C7E60BBF2A9EDA0E00E8ECE2 /* AppCommand.swift */,
+				C7E60BE82A9F3C9900E8ECE2 /* TabBarCommand.swift */,
+				C7E60BCE2A9EEF8A00E8ECE2 /* LaunchCommand.swift */,
+				C7350E5E2A9F5229006DBB8D /* DashboardCommand.swift */,
+				C7E95D092AA1CC35008FD268 /* ReminderCommand.swift */,
+				C72FE7D82AA7302E00900209 /* GADCommand.swift */,
+				C77507792AA85B780083D688 /* DismissCommand.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		C7E60BC72A9EE25E00E8ECE2 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				C7E60BCA2A9EE4A400E8ECE2 /* HomePage.swift */,
+				C7E60BE02A9F2F7D00E8ECE2 /* DashboardPage.swift */,
+				C7350E6F2A9F6570006DBB8D /* TotalDrinkPage.swift */,
+				C7350E752AA05E94006DBB8D /* RecordPage.swift */,
+				C7E60BE22A9F30E300E8ECE2 /* StatisticsPage.swift */,
+				C7E60BE42A9F30EE00E8ECE2 /* ReminderPage.swift */,
+				C7E60BCC2A9EE50600E8ECE2 /* LaunchPage.swift */,
+				C7E60BEC2A9F49E900E8ECE2 /* ProgressPage.swift */,
+				C7350E712AA03175006DBB8D /* SliderView.swift */,
+				C7350E772AA0A038006DBB8D /* HistoryRecordPage.swift */,
+				C7E95D042AA1C020008FD268 /* ReminderView.swift */,
+				C72FE7DE2AA7309C00900209 /* GADNativeView.swift */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		C7E60BDD2A9F1DF500E8ECE2 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7E60BA82A9ED9D600E8ECE2 /* WaterTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E60BB72A9ED9D800E8ECE2 /* Build configuration list for PBXNativeTarget "WaterTimer" */;
+			buildPhases = (
+				C7E60BA52A9ED9D600E8ECE2 /* Sources */,
+				C7E60BA62A9ED9D600E8ECE2 /* Frameworks */,
+				C7E60BA72A9ED9D600E8ECE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterTimer;
+			packageProductDependencies = (
+				C7E95D072AA1C490008FD268 /* SheetKit */,
+				C7E95D0C2AA1D317008FD268 /* FacebookCore */,
+				C72FE7D62AA72F6100900209 /* GoogleMobileAds */,
+			);
+			productName = WaterTimer;
+			productReference = C7E60BA92A9ED9D600E8ECE2 /* WaterTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7E60BA12A9ED9D600E8ECE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C7E60BA82A9ED9D600E8ECE2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C7E60BA42A9ED9D600E8ECE2 /* Build configuration list for PBXProject "WaterTimer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7E60BA02A9ED9D600E8ECE2;
+			packageReferences = (
+				C7E95D062AA1C490008FD268 /* XCRemoteSwiftPackageReference "SheetKit" */,
+				C7E95D0B2AA1D316008FD268 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				C72FE7D52AA72F6100900209 /* XCRemoteSwiftPackageReference "GoogleMobileAds" */,
+			);
+			productRefGroup = C7E60BAA2A9ED9D600E8ECE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7E60BA82A9ED9D600E8ECE2 /* WaterTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7E60BA72A9ED9D600E8ECE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72FE7E32AA732FF00900209 /* admob.json in Resources */,
+				C7E60BB42A9ED9D800E8ECE2 /* Preview Assets.xcassets in Resources */,
+				C7E60BB12A9ED9D800E8ECE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7E60BA52A9ED9D600E8ECE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72FE7DF2AA7309C00900209 /* GADNativeView.swift in Sources */,
+				C72FE7E12AA7310000900209 /* GADState.swift in Sources */,
+				C7E60BE72A9F314500E8ECE2 /* HomeState.swift in Sources */,
+				C7E60BBB2A9ED9ED00E8ECE2 /* Store.swift in Sources */,
+				C7E60BC22A9EDA1800E8ECE2 /* Action.swift in Sources */,
+				C7E60BAF2A9ED9D600E8ECE2 /* ContentView.swift in Sources */,
+				C7E60BE12A9F2F7D00E8ECE2 /* DashboardPage.swift in Sources */,
+				C7E95D0A2AA1CC35008FD268 /* ReminderCommand.swift in Sources */,
+				C7E60BCD2A9EE50600E8ECE2 /* LaunchPage.swift in Sources */,
+				C7E60BCF2A9EEF8A00E8ECE2 /* LaunchCommand.swift in Sources */,
+				C7E60BAD2A9ED9D600E8ECE2 /* WaterTimerApp.swift in Sources */,
+				C7350E682A9F5D93006DBB8D /* ChartsState.swift in Sources */,
+				C7350E642A9F5CFB006DBB8D /* ChartsModel.swift in Sources */,
+				C7350E782AA0A038006DBB8D /* HistoryRecordPage.swift in Sources */,
+				C7E60BEB2A9F455C00E8ECE2 /* DashboardState.swift in Sources */,
+				C7350E622A9F5CC8006DBB8D /* DrinkModel.swift in Sources */,
+				C72FE7D92AA7302E00900209 /* GADCommand.swift in Sources */,
+				C7E60BC62A9EE04F00E8ECE2 /* RootState.swift in Sources */,
+				C7E60BE52A9F30EE00E8ECE2 /* ReminderPage.swift in Sources */,
+				C7E60BBE2A9EDA0600E8ECE2 /* AppState.swift in Sources */,
+				C7E95D052AA1C020008FD268 /* ReminderView.swift in Sources */,
+				C72FE7DD2AA7308100900209 /* GADViewModel.swift in Sources */,
+				C7E60BE92A9F3C9900E8ECE2 /* TabBarCommand.swift in Sources */,
+				C7E60BC02A9EDA0E00E8ECE2 /* AppCommand.swift in Sources */,
+				C7350E5F2A9F5229006DBB8D /* DashboardCommand.swift in Sources */,
+				C72FE7DB2AA7305500900209 /* GADModel.swift in Sources */,
+				C7350E702A9F6570006DBB8D /* TotalDrinkPage.swift in Sources */,
+				C7350E7A2AA1B2D3006DBB8D /* NotificationUtil.swift in Sources */,
+				C7E60BCB2A9EE4A400E8ECE2 /* HomePage.swift in Sources */,
+				C7350E6A2A9F5E6D006DBB8D /* FileHelper.swift in Sources */,
+				C7350E722AA03175006DBB8D /* SliderView.swift in Sources */,
+				C7350E6C2A9F5F08006DBB8D /* RecordModel.swift in Sources */,
+				C7E60BE32A9F30E300E8ECE2 /* StatisticsPage.swift in Sources */,
+				C7E60BED2A9F49E900E8ECE2 /* ProgressPage.swift in Sources */,
+				C775077A2AA85B780083D688 /* DismissCommand.swift in Sources */,
+				C7350E662A9F5D1D006DBB8D /* RecordState.swift in Sources */,
+				C7350E6E2A9F5FE9006DBB8D /* ReminderState.swift in Sources */,
+				C7350E762AA05E94006DBB8D /* RecordPage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C7E60BB52A9ED9D800E8ECE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7E60BB62A9ED9D800E8ECE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7E60BB82A9ED9D800E8ECE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WaterTimer/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.watertimer.healthyhpler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C7E60BB92A9ED9D800E8ECE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WaterTimer/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.watertimer.healthyhpler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7E60BA42A9ED9D600E8ECE2 /* Build configuration list for PBXProject "WaterTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E60BB52A9ED9D800E8ECE2 /* Debug */,
+				C7E60BB62A9ED9D800E8ECE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7E60BB72A9ED9D800E8ECE2 /* Build configuration list for PBXNativeTarget "WaterTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E60BB82A9ED9D800E8ECE2 /* Debug */,
+				C7E60BB92A9ED9D800E8ECE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C72FE7D52AA72F6100900209 /* XCRemoteSwiftPackageReference "GoogleMobileAds" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quanghits/GoogleMobileAds";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C7E95D062AA1C490008FD268 /* XCRemoteSwiftPackageReference "SheetKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fatbobman/SheetKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C7E95D0B2AA1D316008FD268 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C72FE7D62AA72F6100900209 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C72FE7D52AA72F6100900209 /* XCRemoteSwiftPackageReference "GoogleMobileAds" */;
+			productName = GoogleMobileAds;
+		};
+		C7E95D072AA1C490008FD268 /* SheetKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7E95D062AA1C490008FD268 /* XCRemoteSwiftPackageReference "SheetKit" */;
+			productName = SheetKit;
+		};
+		C7E95D0C2AA1D317008FD268 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7E95D0B2AA1D316008FD268 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C7E60BA12A9ED9D600E8ECE2 /* Project object */;
+}
